@@ -1,0 +1,32 @@
+name: Deploy to neocities
+# Deploy script for neocities by @bcomnes. Stripped of all the extra stuff.
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
+
+    - name: Deploy to neocities
+      uses: bcomnes/deploy-to-neocities@v1
+      with:
+        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+        cleanup: false
+        dist_dir: public
