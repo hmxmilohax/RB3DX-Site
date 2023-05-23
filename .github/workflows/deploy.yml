@@ -1,5 +1,5 @@
 name: Deploy to neocities
-# Deploy script for neocities by @bcomnes. Stripped of all the extra stuff.
+# Deploy script for neocities by @bcomnes. Stripped of node.js and npm stuff.
 on:
   push:
     branches:
