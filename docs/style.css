@@ -5,28 +5,27 @@
 		url("avant_garde_bold.woff") format("woff");
 }
 body {
-/*	background:
+	background:
 		url("images/headerbg.png"),
 		url("images/tile.png");
 	background-repeat: no-repeat, repeat;
-	background-position: top center; */
+	background-position: top center;
 	line-height: 1.5;
 	font-size: 62.5%;
-	background-color: #fafafa;
+	background-color: black;
 	margin: 0;
 	color: white;
 	font-family: Helvetica, Arial, sans-serif; }
 
-  main {
-  padding: 2em;
+main {
+    padding: 2em;
 	width: 700px;
 	margin: auto;
 	border-style: solid;
-	border-width: 0 155px 150px 155px;
+	border-width: 0 128px 128px 128px;
 	border-image-source: url("images/backer2.png");
-	background-image: url("images/black.jpg");
-	border-image-slice: 0 165 160 165;
-	border-image-repeat: round; }
+	border-image-slice: 0 128 128 128;
+	border-image-repeat: stretch }
 
 nav {
 	font-weight: normal;
@@ -40,7 +39,7 @@ nav {
 a, h1, h2, h3, h4, h5, h6 { font-family: "Avant Garde", Helvetica, Arial, sans-serif; }
 nav a { color: white; filter: drop-shadow(4px 4px 4px #352508); } 
 header { height: 173px; }
-footer { color: black; width: 900px; margin: auto; padding: 0em; }
+footer { color: white; width: 900px; margin: auto; padding: 0em; }
 h2 { font-size: 3em; margin-top: 0; }
 h3 { font-size: 2em; }
 p, li, dt, dd { font-size: 1.8em; }
