@@ -7,7 +7,7 @@
 body {
 	background:
 		url("images/headerbg.png"),
-		url("images/tile.png");
+		url("images/tile.jpg");
 	background-repeat: no-repeat, repeat;
 	background-position: top center;
 	line-height: 1.5;
