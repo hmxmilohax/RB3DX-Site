@@ -156,7 +156,7 @@
     updateSize();
 	*/
 
-    fetch('https://progress.decomp.club/data/rb3/SZBE69/dol/')
+    fetch('https://progress.decomp.club/data/rb3/SZBE69/dol/?mode=all')
         .then(v => v.json())
         .then(result => {
             const entries = result['rb3']['SZBE69']['dol'].reverse();
