@@ -164,10 +164,10 @@
     updateSize();
 	*/
 
-    fetch('https://progress.decomp.club/data/rb3/SZBE69/dol/?mode=all')
+    fetch('https://progress.decomp.club/data/rb3/SZBE69_B8/dol/?mode=all')
         .then(v => v.json())
         .then(result => {
-            const entries = result['rb3']['SZBE69']['dol'].reverse();
+            const entries = result['rb3']['SZBE69_B8']['dol'].reverse();
             u.setData([
                 entries.map(a => a.timestamp),
                 entries.map(a => 100 * (a.measures['code'] / a.measures['code/total'])),
