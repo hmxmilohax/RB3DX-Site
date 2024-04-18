@@ -56,10 +56,63 @@
 
 <br>
 
-<h3>Find your platform of choice below...</h3>
+<h3></h3>
 
 <p><br> <br></p>
 
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Find your platform of choice below...</h2>
+<p>Select your platform.</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'RPCS3')">RPCS3</button>
+  <button class="tablinks" onclick="openCity(event, 'PS3')">PS3</button>
+  <button class="tablinks" onclick="openCity(event, 'Xbox 360')">Xbox 360</button>
+  <button class="tablinks" onclick="openCity(event, 'Wii')">Wii/Dolphin</button>
+</div>
+
+<div id="RPCS3" class="tabcontent">
 <h2>Installing on PC, via <a href="https://rpcs3.net/">RPCS3</a></h2>
 
     <p>Before you start, check out the <a href="https://hmxmilohax.github.io/rb3-pc/english/intro/">Definitive RB3 PC Setup Guide</a>. This covers everything, from installing the base game, to setting up your instruments, and even playing online after the original servers shut down!</p>
@@ -79,9 +132,9 @@
 <blockquote>
     <p>Rock on!</p>
 </blockquote>
+</div>
 
-<p><br> <br></p>
-
+<div id="PS3" class="tabcontent">
 <h2>Installing on PS3*</h2>
 
 <blockquote>
@@ -106,9 +159,9 @@
     <p>You can play the game using the original disc or via a backup on your hard drive. Rock on!</p>
     <p><em>Note: Song title display customization and "Author Finder" are not available on PS3 Hardware.</em></p>
 </blockquote>
+</div>
 
-<p><br> <br></p>
-
+<div id="Xbox 360" class="tabcontent">
 <h2>Installing on Xbox 360*</h2>
 
 <blockquote>
@@ -157,9 +210,9 @@
 <blockquote>
     <p>PS, you should also check out <a href="https://rb3e.rbenhanced.rocks/">RB3Enhanced</a>! You can run it alongside <i>Deluxe</i> and use its additional quality of life features. Rock on!</p>
 </blockquote>
+</div>
 
-<p><br> <br></p>
-
+<div id="Wii" class="tabcontent">
 <h2>Installing on Wii* (and <a href="https://dolphin-emu.org/">Dolphin Emulator</a>)</h2>
 
 <blockquote>
@@ -186,6 +239,26 @@
 <blockquote>
     <p>PS, you should also check out <a href="https://rb3e.rbenhanced.rocks/">RB3Enhanced</a>! You can run it alongside <i>Deluxe</i> and use its additional quality of life features. Rock on!</p>
 </blockquote>
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
 
 </main>
 <footer>
