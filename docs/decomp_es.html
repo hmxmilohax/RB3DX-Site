@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<title>Decomp - Rock Band 3 Deluxe</title>
+	<title>Decompilación - Rock Band 3 Deluxe</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<meta property="og:image" content="https://rb3dx.neocities.org/images/embed.jpg">
 	<meta property="og:image:type" content="image/gif">
-	<meta name="twitter:text:title" content="The biggest rhythm game mod of all time!"> 
+	<meta name="twitter:text:title" content="¡El mod mas grande para un juego de música!"> 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:site_name" content="The biggest rhythm game mod of all time!">	
-	<meta property="og:title" content="Decomp - Rock Band 3 Deluxe">
+	<meta property="og:site_name" content="¡El mod mas grande para un juego de música!">	
+	<meta property="og:title" content="Decompilación - Rock Band 3 Deluxe">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://rb3dx.neocities.org">
 	<meta property="theme-color" content="#61a8ff">
@@ -25,7 +25,7 @@
 <header>
 	<br><br><br>
 	<div class="usable-area">
-		<a href="index.html"><img src="images/logo.gif" style="padding-right: 360px;" title="Rock Band 3 Deluxe" alt="Rock Band 3 Deluxe" id="logo"></a>
+		<a href="index_es.html"><img src="images/logo.gif" style="padding-right: 360px;" title="Rock Band 3 Deluxe" alt="Rock Band 3 Deluxe" id="logo"></a>
 		<a href="https://github.com/hmxmilohax/rock-band-3-deluxe"><img src="images/social/github.svg" style="height:40px; padding-right: 20px;" title="GitHub" alt="GitHub" id="github"></a>
 		<a href="https://x.com/hmxmilohax"><img src="images/social/twitter.svg" style="height:40px; padding-right: 20px;" title="Twitter" alt="Twitter" id="twitter"></a>
 		<a href="discord.html"><img src="images/social/discord.svg" style="height:40px; padding-right: 20px;" title="Discord" alt="Discord" id="twitter"></a>
@@ -33,72 +33,63 @@
 </header>
 <nav>
 	<div class="usable-area">
-		<a href="index.html">Home</a> | 
-		<a href="about.html">About Us</a> | 
-		<a href="features.html">Features</a> | 
-		<a href="downloads.html">Downloads</a> | 
-		<a href="install.html">How to Install</a> |
-		<a href="decomp.html">Decomp</a> |
-		<a href="decomp_es.html">Español</a>
+		<a href="index_es.html">Inicio</a> | 
+		<a href="about_es.html">Acerca De</a> | 
+		<a href="features_es.html">Adiciones</a> | 
+		<a href="downloads_es.html">Descargas</a> | 
+		<a href="install_es.html">Como Instalar</a> |
+		<a href="decomp_es.html">Decompilación</a> |
+		<a href="decomp.html">English</a>
 	</div>
 </nav>
 
 <main class="homepage-content">
-	<h2 style="text-align: center">Rock Band 3 Decompilation</h2>
+	<h2 style="text-align: center">Decompilación de Rock Band 3</h2>
 
-	<h1>What is this?</h1>
+	<h1>¿Qué es esto?</h1>
 	<p>
-		This is a reverse engineering project aimed at producing a
-		<b>matching</b> decompilation of the Wii version of <i>Rock Band 3</i>.
-		This process involves writing C++ code that when compiled, produces the
-		exact same code that is in the final release of the game.
+		Esto es un proyecto de ingeniería inversa que va a crear una decompilación que produce el código <b>exacto</b> de la versión Wii de <i>Rock Band 3</i>.
+		Este proceso involucra programación de código C++ que, cuando sea compilada, produce el mismo código que la versión oficial del juego.
 	</p>
 	<p>
-		The end result of all of this will be a fully editable version of the
-		game's code in human-readable C++. This will allow for modifications to
-		be made beyond what we can already do in <i>Rock Band 3 Deluxe</i>.
+		Esto va a resultar en una versión del juego que puede ser editada con código C++ en lenguaje claro. Esto nos va a dejar hacer modificaciones más avanzadas de lo que es posible con <i>Rock Band 3 Deluxe</i>.
 	</p>
 
-	<h1>Why the Wii version?</h1>
+	<h1>¿Por qué usan la versión de Wii?</h1>
 	<p>
-		It's quite simply a matter of this being the only version of the game
-		where a matching decompilation is even viable to produce. Other
-		versions have went through a process called <a
-		href=https://en.wikipedia.org/wiki/Interprocedural_optimization>Link-Time
-	Optimization</a> that makes the code faster, but for us this has the massive
-		downside of making a matching decompilation project completely infeasible.
+		Simplemente, es la única versión del juego con la que este tipo de
+		proyecto es posible. Las otras versión del juego pasaron por <a
+		href=https://en.wikipedia.org/wiki/Interprocedural_optimization>optimización de tiempo de enlace</a> que hace el rendimiento del código más rápido, 
+		pero ofusca el código completamente. Esto aumenta la dificultad exponencialmente.
 	</p>
 
-	<h1>How can I contribute?</h1>
+	<h1>¿Puedo contribuir?</h1>
 	<p>
-		You may contribute <a href="https://github.com/darkrta/rb3">here</a>.
-		We are always looking for more contributors to push the project
-		forward.
+		Puedes contribuir <a href="https://github.com/darkrta/rb3">aquí</a>.
+		Siempre se puede usar más ayuda para avanzar este proyecto.
 	</p>
 
-	<h1>What about a port?</h1>
+	<h1>¿Por qué mejor no hacen una versión para PC?</h1>
 	<p>
-		Let's preface this by saying that decompilation projects are <i>NOT</i>
-		ports. With that being said, this is a very rare case where the people
-		working on the decompilation project are also those interested in
-		porting the codebase to more platforms.
+		En primer lugar, los proyectos de decompilación <i>no</i>
+		son para hacer versiones para otras plataformas. Dicho esto,
+		esta decompilación es un caso especial donde el proyecto también quiere crear
+		una versión para PC y otras plataformas.
 	</p>
 	<p>
-		Keep in mind this process takes an extremely long time, and we will not
-		be making any attempt at a port until the game is fully decompiled. If
-		you really want a port to be made faster and you have the technical
-		know-how (or are willing to learn), you should consider contributing to
-		the project.
-	</p>
-
-	<h1>Will you be able to do [modification] with this?</h1>
-	<p>
-		Theoretically yes, but such modifications are completely outside of the
-		scope of this project. This project only concerns itself with producing
-		readable C++ code that can be used to create said modifications.
+		Por favor, toma en cuenta que este proyecto va tomar mucho tiempo
+		y no va ver ningún intento a crear una versión de PC hasta que
+		el proyecto de decompilación termine. Si quieres que avance más rápido
+		y sabes como ayudar (o quieres aprender), considera contribuir.
 	</p>
 
-	<h1 style="text-align: center">Progress</h1>
+	<h1>¿Se va poder hacer [modificación] con esto?</h1>
+	<p>
+		En teoría si, pero las modificaciones no son una prioridad para la decompilación.
+		La decompilación está atinando a crear una versión exacta con código C++ en lenguaje claro. Una vez realizada, se pueden crear modificaciones.
+	</p>
+
+	<h1 style="text-align: center">Estado</h1>
 
 	<div id="chartContainer" style="display: flex; justify-content: center"></div>
 
@@ -131,13 +122,13 @@
         series: [
             {},
             {
-                label: "Code",
+                label: "Código",
                 width: 2,
                 stroke: "rgb(240, 141, 70)",
                 value: percentValue,
             },
             {
-                label: "Data",
+                label: "Datos",
                 width: 2,
                 stroke: "#5c9bfe",
                 value: percentValue,
@@ -179,7 +170,7 @@
 </main>
 <footer>
 	<a href="discord.html"><img src="images/milohax.png" alt="MiloHax"></a>
-	<p><cite>Rock Band 3</cite> &copy; 2010 Harmonix Music Systems. <cite>Rock Band 3 Deluxe</cite> is a fan project and is not affiliated with Harmonix, MTV Games, Mad Catz, or EA.</p>
+	<p><cite>Rock Band 3</cite> &copy; 2010 Harmonix Music Systems. <cite>Rock Band 3 Deluxe</cite> es un proyecto hecho por fans que no está asociado con Harmonix, MTV Games, Mad Catz, o EA.</p>
 </footer>
 </body>
 </html>
