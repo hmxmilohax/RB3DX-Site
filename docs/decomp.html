@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="style.css">
 	<meta property="og:image" content="https://rb3dx.milohax.org/images/embed.jpg">
 	<meta property="og:image:type" content="image/gif">
-	<meta name="twitter:text:title" content="The biggest rhythm game mod of all time!"> 
+	<meta name="twitter:text:title" content="The biggest rhythm game mod of all time!">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:site_name" content="The biggest rhythm game mod of all time!">	
+	<meta property="og:site_name" content="The biggest rhythm game mod of all time!">
 	<meta property="og:title" content="Decomp - Rock Band 3 Deluxe">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://rb3dx.milohax.org">
@@ -22,164 +22,152 @@
 	<meta name="msapplication-TileColor" content="#00aba9">
 </head>
 <body>
-<header>
-	<br><br><br>
-	<div class="usable-area">
-		<a href="index.html"><img src="images/logo.gif" style="padding-right: 360px;" title="Rock Band 3 Deluxe" alt="Rock Band 3 Deluxe" id="logo"></a>
-		<a href="https://github.com/hmxmilohax/rock-band-3-deluxe"><img src="images/social/github.svg" style="height:40px; padding-right: 20px;" title="GitHub" alt="GitHub" id="github"></a>
-		<a href="https://x.com/hmxmilohax"><img src="images/social/twitter.svg" style="height:40px; padding-right: 20px;" title="Twitter" alt="Twitter" id="twitter"></a>
-		<a href="https://discord.gg/milohax"><img src="images/social/discord.svg" style="height:40px; padding-right: 20px;" title="Discord" alt="Discord" id="twitter"></a>
-	</div>
-</header>
-<nav>
-	<div class="usable-area">
-		<a href="index.html">Home</a> | 
-		<a href="about.html">About Us</a> | 
-		<a href="features.html">Features</a> | 
-		<a href="downloads.html">Downloads</a> | 
-		<a href="install.html">How to Install</a> |
-		<a href="decomp.html">Decomp</a> |
-		<a href="decomp_es.html">Español</a> |  
-	</div>
-</nav>
+	<header>
+		<br><br><br>
+		<div class="usable-area">
+			<a href="index.html">
+				<img src="images/logo.gif" style="padding-right: 10px;" title="Rock Band 3 Deluxe" alt="Rock Band 3 Deluxe" id="logo">
+			</a>
+			<div class="language-selector">
+				<button><img src="images/social/language.svg" style="height:25px;" title="Language" alt="Language" id="language"></button>
+				<div class="language-selector-content">
+					<a href="decomp.html">English</a>
+					<a href="decomp_es.html">Español</a>
+				</div>
+			</div>
+			<a href="https://github.com/hmxmilohax/rock-band-3-deluxe">
+				<img src="images/social/github.svg" style="height:40px; padding-left: 302px; padding-right: 20px;" title="GitHub" alt="GitHub" id="github">
+			</a>
+			<a href="https://x.com/hmxmilohax">
+				<img src="images/social/twitter.svg" style="height:40px; padding-right: 20px;" title="Twitter" alt="Twitter" id="twitter">
+			</a>
+			<a href="https://discord.gg/milohax">
+				<img src="images/social/discord.svg" style="height:40px; padding-right: 20px;" title="Discord" alt="Discord" id="twitter">
+			</a>
+		</div>
+	</header>
+	<nav>
+		<div class="usable-area">
+			<a href="index.html">Home</a> | 
+			<a href="about.html">About Us</a> | 
+			<a href="decomp.html">Decomp</a> | 
+			<a href="features.html">Features</a> | 
+			<a href="downloads.html">Downloads</a> | 
+			<a href="install.html">How to Install</a> |
+			<a href="bugreports.html">Bug Reports</a>
+		</div>
+	</nav>
+	<main class="homepage-content">
+		<h2 style="text-align: center">Rock Band 3 Decompilation</h2>
 
-<main class="homepage-content">
-	<h2 style="text-align: center">Rock Band 3 Decompilation</h2>
+		<h1>What is this?</h1>
 
-	<h1>What is this?</h1>
-	<p>
-		This is a reverse engineering project aimed at producing a
-		<b>matching</b> decompilation of the Wii version of <i>Rock Band 3</i>.
-		This process involves writing C++ code that when compiled, produces the
-		exact same code that is in the final release of the game.
-	</p>
-	<p>
-		The end result of all of this will be a fully editable version of the
-		game's code in human-readable C++. This will allow for modifications to
-		be made beyond what we can already do in <i>Rock Band 3 Deluxe</i>.
-	</p>
+		<p>
+			This is a reverse engineering project aimed at producing a <b>matching</b> decompilation of the Wii version of <i>Rock Band 3</i>. This process involves writing C++ code that when compiled, produces the exact same code that is in the final release of the game.
+		</p>
 
-	<h1>Why the Wii version?</h1>
-	<p>
-		It's quite simply a matter of this being the only version of the game
-		where a matching decompilation is even viable to produce. Other
-		versions have went through a process called <a
-		href=https://en.wikipedia.org/wiki/Interprocedural_optimization>Link-Time
-	Optimization</a> that makes the code faster, but for us this has the massive
-		downside of making a matching decompilation project completely infeasible.
-	</p>
+		<p>
+			The end result of all of this will be a fully editable version of the game's code in human-readable C++. This will allow for modifications to be made beyond what we can already do in <i>Rock Band 3 Deluxe</i>.
+		</p>
 
-	<h1>How can I contribute?</h1>
-	<p>
-		You may contribute <a href="https://github.com/darkrta/rb3">here</a>.
-		We are always looking for more contributors to push the project
-		forward.
-	</p>
+		<h1>Why the Wii version?</h1>
+		<p>
+			It's quite simply a matter of this being the only version of the game where a matching decompilation is even viable to produce. Other versions have went through a process called <a href=https://en.wikipedia.org/wiki/Interprocedural_optimization>Link-Time Optimization</a> that makes the code faster, but for us this has the massive downside of making a matching decompilation project completely infeasible.
+		</p>
 
-	<h1>What about a port?</h1>
-	<p>
-		Let's preface this by saying that decompilation projects are <i>NOT</i>
-		ports. With that being said, this is a very rare case where the people
-		working on the decompilation project are also those interested in
-		porting the codebase to more platforms.
-	</p>
-	<p>
-		Keep in mind this process takes an extremely long time, and we will not
-		be making any attempt at a port until the game is fully decompiled. If
-		you really want a port to be made faster and you have the technical
-		know-how (or are willing to learn), you should consider contributing to
-		the project.
-	</p>
+		<h1>How can I contribute?</h1>
+		<p>
+			You may contribute <a href="https://github.com/darkrta/rb3">here</a>. We are always looking for more contributors to push the project forward.
+		</p>
 
-	<h1>Will you be able to do [modification] with this?</h1>
-	<p>
-		Theoretically yes, but such modifications are completely outside of the
-		scope of this project. This project only concerns itself with producing
-		readable C++ code that can be used to create said modifications.
-	</p>
+		<h1>What about a port?</h1>
+		<p>
+			Let's preface this by saying that decompilation projects are <i>NOT</i> ports. With that being said, this is a very rare case where the people working on the decompilation project are also those interested in porting the codebase to more platforms.
+		</p>
+		<p>
+			Keep in mind this process takes an extremely long time, and we will not be making any attempt at a port until the game is fully decompiled. If you really want a port to be made faster and you have the technical know-how (or are willing to learn), you should consider contributing to the project.
+		</p>
 
-	<h1 style="text-align: center">Progress</h1>
+		<h1>Will you be able to do [modification] with this?</h1>
+		<p>
+			Theoretically yes, but such modifications are completely outside of the scope of this project. This project only concerns itself with producing readable C++ code that can be used to create said modifications.
+		</p>
 
-	<div id="chartContainer" style="display: flex; justify-content: center"></div>
+		<h1 style="text-align: center">Progress</h1>
 
+		<div id="chartContainer" style="display: flex; justify-content: center"></div>
 
-<link href="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.iife.min.js"></script>
-<script>
-    const height = 400;
-    const stroke = '#a9a9b3';
-    const grid = {
-        stroke: 'rgba(128, 128, 128, 0.1)',
-    };
-    function percentValue(self, rawValue) {
-        if (rawValue == null) {
-            return null;
-        }
-        return rawValue.toFixed(2) + "%";
-    }
+		<link href="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.iife.min.js"></script>
+		<script>
+			const height = 400;
+			const stroke = '#a9a9b3';
+			const grid = {
+				stroke: 'rgba(128, 128, 128, 0.1)',
+			};
 
-    const opts = {
-        id: "chart",
-        //title: "Progress",
-        width: 700,
-        height: height,
-        scales: {
-            x: {
-                time: true,
-            },
-        },
-        series: [
-            {},
-            {
-                label: "Code",
-                width: 2,
-                stroke: "rgb(240, 141, 70)",
-                value: percentValue,
-            },
-            {
-                label: "Data",
-                width: 2,
-                stroke: "#5c9bfe",
-                value: percentValue,
-            }
-        ],
-        axes: [
-            {
-                stroke,
-                grid,
-            },
-            {
-                stroke,
-                grid,
-                values: (self, ticks) => ticks.map(rawValue => rawValue.toFixed(0) + "%"),
-            },
-        ],
-    };
+			function percentValue(self, rawValue) {
+				if (rawValue == null) {
+					return null;
+				}
+				return rawValue.toFixed(2) + "%";
+			}
 
-    const u = new uPlot(opts, null, document.getElementById('chartContainer'));
-	/*
-    function updateSize() {
-        const container = document.getElementsByClassName('homepage-content')[0];
-        u.setSize({ width: container.offsetWidth - 60, height });
-    window.addEventListener('resize', updateSize);
-    updateSize();
-	*/
+			const opts = {
+				id: "chart",
+				//title: "Progress",
+				width: 700,
+				height: height,
+				scales: {
+					x: {
+						time: true,
+					},
+				},
+				series: [
+					{},
+					{
+						label: "Code",
+						width: 2,
+						stroke: "rgb(240, 141, 70)",
+						value: percentValue,
+					},
+					{
+						label: "Data",
+						width: 2,
+						stroke: "#5c9bfe",
+						value: percentValue,
+					}
+				],
+				axes: [
+					{
+						stroke,
+						grid,
+					},
+					{
+						stroke,
+						grid,
+						values: (self, ticks) => ticks.map(rawValue => rawValue.toFixed(0) + "%"),
+					},
+				],
+			};
 
-    fetch('https://progress.decomp.club/data/rb3/SZBE69_B8/dol/?mode=all')
-        .then(v => v.json())
-        .then(result => {
-            const entries = result['rb3']['SZBE69_B8']['dol'].reverse();
-            u.setData([
-                entries.map(a => a.timestamp),
-                entries.map(a => 100 * (a.measures['code'] / a.measures['code/total'])),
-                entries.map(a => 100 * (a.measures['data'] / a.measures['data/total'])),
-            ]);
-        });
-</script>
-</main>
-<footer>
-	<a href="https://discord.gg/milohax"><img src="images/milohax.png" alt="MiloHax"></a>
-	<p><cite>Rock Band 3</cite> &copy; 2010 Harmonix Music Systems. <cite>Rock Band 3 Deluxe</cite> is a fan project and is not affiliated with Harmonix, MTV Games, Mad Catz, or EA.</p>
-</footer>
+			const u = new uPlot(opts, null, document.getElementById('chartContainer'));
+
+			fetch('https://progress.decomp.club/data/rb3/SZBE69_B8/dol/?mode=all')
+				.then(v => v.json())
+				.then(result => {
+					const entries = result['rb3']['SZBE69_B8']['dol'].reverse();
+					u.setData([
+						entries.map(a => a.timestamp),
+						entries.map(a => 100 * (a.measures['code'] / a.measures['code/total'])),
+						entries.map(a => 100 * (a.measures['data'] / a.measures['data/total'])),
+					]);
+				});
+		</script>
+	</main>
+	<footer>
+		<a href="https://discord.gg/milohax"><img src="images/milohax.png" alt="MiloHax"></a>
+		<p><i>Rock Band 3</i> &copy; 2010 Harmonix Music Systems. <i>Rock Band 3 Deluxe</i> is a fan project and is not affiliated with Harmonix, MTV Games, Mad Catz, or EA.</p>
+	</footer>
 </body>
 </html>
