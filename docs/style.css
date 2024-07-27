@@ -5,7 +5,7 @@
     url("avant_garde_bold.woff") format("woff");
 }
 body {
-  background: url("images/headerbg.png"), url("images/tile.jpg");
+  background: url("images/headerbg.webp"), url("images/tile.webp");
   background-repeat: no-repeat, repeat;
   background-position: top center;
   line-height: 1.5;
@@ -22,7 +22,7 @@ main {
   margin: auto;
   border-style: solid;
   border-width: 0 128px 256px 128px;
-  border-image-source: url("images/backer2.png");
+  border-image-source: url("images/backer2.webp");
   border-image-slice: 0 128 256 128;
   border-image-repeat: stretch;
 }
