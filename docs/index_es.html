@@ -64,11 +64,14 @@
 		<h1 style="text-align: center; color: #ffffff;"> 📥 <a href="downloads_es.html">¡Descarga ahora! &gt;</a></h1>
 		<p style="text-align: center; color: #ffffff;">*Se puede jugar en PC (RPCS3), PS3, Xbox 360 y Wii!</p>
 		<hr>
-		<video width="700px" height="393.75px" src="https://github.com/hmxmilohax/RB3DX-Site/raw/main/assets/rb3dx.mp4" type="video/mp4" muted class="vid" loop alt="Rock Band 3 Deluxe"></video>
-		<script> 
+		<video width="700px" height="393.75px" src="images/rb3dx.webm" type="video/mp4" muted class="vid" loop alt="Rock Band 3 Deluxe"></video>
+		<script>
 			let clip = document.querySelector(".vid");
 			clip.play();
-		</script> 
+			clip.addEventListener('click', function() {
+				clip.play();
+			});
+		</script>
 		<hr>
 		<h3>Lo que dicen los demás:</h3>
 		<p><b>"A mí no me gustaba RB3 para nada hasta que jugué este mod, sólo lo jugaba si me obligaban."</b><br>&mdash; <a href="https://www.youtube.com/@acai28">Acai</a> <small><a href="images/seeth/acai.webp">[origen]</a></small></p>

@@ -65,10 +65,13 @@
 		<p style="text-align: center; color: #ffffff;">*FYI, you can play it on PC (RPCS3), PS3, Xbox 360, and Wii!</p>
 		<hr>
 		<video width="700px" height="393.75px" src="images/rb3dx.webm" type="video/mp4" muted class="vid" loop alt="Rock Band 3 Deluxe"></video>
-		<script> 
+		<script>
 			let clip = document.querySelector(".vid");
-			clip.play(); 
-		</script> 
+			clip.play();
+			clip.addEventListener('click', function() {
+				clip.play();
+			});
+		</script>
 		<hr>
 		<h3>What people are saying:</h3>
 		<p><b>"I straight up did not like RB3 before this mod, I only played it if I was forced to."</b><br>&mdash; <a href="https://www.youtube.com/@acai28">Acai</a> <small><a href="images/seeth/acai.webp">[source]</a></small></p>
