@@ -1,0 +1,15 @@
+export default async function(eleventyConfig) {
+    eleventyConfig.setInputDirectory("src")
+    eleventyConfig.addPassthroughCopy("src/**/*.css")
+    eleventyConfig.addPassthroughCopy("src/**/*.png")
+    eleventyConfig.addPassthroughCopy("src/**/*.gif")
+    eleventyConfig.addPassthroughCopy("src/**/*.jpg")
+    eleventyConfig.addPassthroughCopy("src/**/*.svg")
+    eleventyConfig.addPassthroughCopy("src/**/*.ico")
+    eleventyConfig.addPassthroughCopy("src/**/*.jpeg")
+    eleventyConfig.addPassthroughCopy("src/**/*.webp")
+    eleventyConfig.addPassthroughCopy("src/**/*.webm")
+    eleventyConfig.addPassthroughCopy("src/**/*.woff")
+    eleventyConfig.addPassthroughCopy("src/**/*.woff2")
+    eleventyConfig.setLayoutsDirectory("_layouts")
+};
