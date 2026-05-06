@@ -1,16 +1,15 @@
 ---
-title: Cómo Instalar
+title: Cómo instalar
 layout: main.html
 lang: es
 ---
-<h2 style="text-align: center;">Cómo Instalar</h2>
+<h2 style="text-align: center;">Cómo instalar</h2>
 
-<h3><i>Rock Band 3 Deluxe</i> requiere una copia de <i>Rock Band 3</i> limpia y sin modificaciones antes de instalar. Esperemos que esto esté claro.</h3>
+<h3><i>Rock Band 3 Deluxe</i> requiere una copia de <i>Rock Band 3</i> limpia y sin modificaciones antes de instalar. Esperemos que esto sea claro.</h3>
 
 <ul>
     <li><b>PS3:</b> BLUS30463 (NTSC)</li>
     <li><b>360:</b> 45410914 (RF)</li>
-    <li><b>Wii:</b> SZBE69 (NTSC) o SZBP69 (PAL)</li>
 </ul>
 
 <br>
@@ -56,44 +55,21 @@ lang: es
 <h2>Seleccionar tu plataforma preferida</h2>
 
 <div class="tab">
-    <button class="tablinks" onclick="window.open('https://rb3pc.milohax.org/gs_disc_es', '_blank')">RPCS3</button>
-    <button class="tablinks" onclick="openCity(event, 'PS3')">PS3</button>
-    <button class="tablinks" onclick="openCity(event, 'Xbox 360')">Xbox 360</button>
-    <button class="tablinks" onclick="openCity(event, 'Wii')">Wii/Dolphin</button>
-    <button class="tablinks" onclick="openCity(event, 'YARG')">YARG (Song Updates)</button>
-</div>
-
-<div id="PS3" class="tabcontent">
-    <h2>Instalando en PS3*</h2>
-
-    <blockquote>
-        <p>*RB3DX requiere una consola de PS3 <i>modificada</i> (CFW o HEN) para funcionar.</p>
-    </blockquote>
-
-    <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
-
-    <ul>
-        <li>Extrae el archivo <code>.zip</code></li>
-        <li>Copia el archivo <code>.pkg</code> al directorio de raíz de una memoria USB <b>con formato FAT32</b>.</li>
-        <li>Saca la memoria USB de tu PC y <b>conéctala al puerto que esté más a la derecha de tu PS3</b>.</li>
-        <li>En el menú XMB de PS3, ve a <b>Administrar archivos PKG &gt; Instalar archivos PKG &gt; Directorio estándar</b>.</li>
-        <li><b>Instálalo</b> como cualquier otro archivo <code>.pkg</code>.</li>
-    </ul>
-
-    <img src="/images/install/ps3_dxpkg.webp" width="75%" alt="PS3 DX PKG">
-
-    <h3>✅ <i>¡Rock Band 3 Deluxe está instalado y listo para jugar!</i></h3>
-
-    <blockquote>
-        <p>Puedes jugar con un disco original o por una copia en el disco duro de la consola. ¡A rockear!</p>
-    </blockquote>
+    <button class="tablinks" onclick="window.open('https://guides.milohax.org/es/rb3pc/intro/disclaimers/', '_blank')">RPCS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'Xbox 360')">Xbox 360</button>
+    <button class="tablinks" onclick="openPlat(event, 'PS3')">PS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'YARG')">YARG (Song Updates)</button>
+    <button class="tablinks" onclick="openPlat(event, 'Wii')">Wii/Dolphin (Desarrollo)</button>
 </div>
 
 <div id="Xbox 360" class="tabcontent">
     <h2>Instalando en Xbox 360*</h2>
 
     <blockquote>
-        <p>*RB3DX requiere una consola de Xbox 360 <i>modificada/chipeada</i> (RGH/JTAG) para funcionar.</p>
+        <p>*RB3DX requiere una consola de Xbox 360 <i>modificada/chipeada</i> (RGH/JTAG) o con BadAvatar para funcionar.</p>
+        <li>¡La versión de "Games on Demand" (GoD) <i>Rock Band 3</i> NO es compatible! El juego necesita estar en formato carpeta; deberías ver un archivo que se llama <code>default.xex</code></li>
+        <img src="/images/install/360_no_god.webp" width="50%" alt="360 NO GOD">
+        <li>No uses ISO2GOD después de instalar el mod, porque no podrás guardar tus ajustes o buscar.</li>
     </blockquote>
 
     <p><b>Instala tu copia de Rock Band 3</b> al disco duro de la consola. <i>Esto es requerido.</i></p>
@@ -102,6 +78,8 @@ lang: es
         <li>Recomendamos que <b>cambies el nombre de <code>default.xex</code> a <code>default_vanilla.xex</code></b>, para tener una copia de seguridad, por si acaso quieres regresar a jugar sin modificaciones (por cualquier razón)</li>
     </ul>
 
+    <img src="/images/install/360_aurora_install.webp" width="100%" alt="360 Aurora Install">
+    
     <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
 
     <ul>
@@ -142,10 +120,65 @@ lang: es
     </blockquote>
 </div>
 
-<div id="Wii" class="tabcontent">
-    <h2>Instalando en Wii* (y emulador <a href="https://dolphin-emu.org/">Dolphin</a>)</h2>
+<div id="PS3" class="tabcontent">
+    <h2>Instalando en PS3*</h2>
 
     <blockquote>
+        <p>*RB3DX requiere una consola de PS3 <i>modificada</i> (CFW o HEN) con firmware de versión 4.89 (o mas nueva) para funcionar.</p>
+    </blockquote>
+
+    <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
+
+    <ul>
+        <li>Extrae el archivo <code>.zip</code></li>
+        <li>Copia el archivo <code>.pkg</code> al directorio de raíz de una memoria USB <b>con formato FAT32</b>.</li>
+        <li>Saca la memoria USB de tu PC y <b>conéctala al puerto que esté más a la derecha de tu PS3</b>.</li>
+        <li>En el menú XMB de PS3, ve a <b>Administrar archivos PKG &gt; Instalar archivos PKG &gt; Directorio estándar</b>.</li>
+        <li><b>Instálalo</b> como cualquier otro archivo <code>.pkg</code>.</li>
+    </ul>
+
+    <img src="/images/install/ps3_dxpkg.webp" width="75%" alt="PS3 DX PKG">
+
+    <h3>✅ <i>¡Rock Band 3 Deluxe está instalado y listo para jugar!</i></h3>
+
+    <blockquote>
+        <p>Puedes jugar con un disco original o por una copia en el disco duro de la consola. ¡A rockear!</p>
+    </blockquote>
+</div>
+
+<div id="YARG" class="tabcontent">
+    <h2>Mejoras de canciones para <a href="https://yarg.in/">YARG</a></h2>
+
+    <blockquote>
+        <p>Las mejoras de canciones de RB3DX requieren archivos CON de Rock Band <i>originales</i> para funcionar.</p>
+    </blockquote>
+
+    <h3>Descarga las <a href="/es/downloads/">Mejoras de canciones para YARG</a> de las "Descargas Adicionales" si todavía no lo has hecho</h3>
+
+    <ul>
+        <li>Extrae el archivo <code>.zip</code></li>
+        <li>Arrastra la carpeta <code>songs_updates</code> al lado de la misma carpeta que contiene los archivos <code>CON</code> de Rock Band</li>
+        <li><b>¡No coloques la carpeta de <code>songs_updates</code> adentro de la carpeta con las canciones!</b></li>
+        <li>En YARG, ve a <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
+    </ul>
+
+    <img src="/images/install/yarg_upd_es.webp" width="50%" alt="songs_updates">
+
+    <h3>✅ <i>¡Las mejoras de Rock Band 3 Deluxe ya están instaladas y listas para jugar!</i></h3>
+
+    <blockquote>
+        <p>¡A rockear!</p>
+    </blockquote>
+</div>
+
+<div id="Wii" class="tabcontent">
+    <h2>Instalando en Wii* (y emulador <a href="https://dolphin-emu.org/">Dolphin</a>)</h2>
+    <center><h3>⚠️ ¡NO RECOMENDADO! ⚠️</h3></center>
+    <blockquote>
+        <p><b>Soporte para Wii se acabo. ¡Esta versión es solo para desarrolladores!</b></p>
+        <p>Se recomienda que los usuarios de Wii solo instalen <a href="https://rb3e.rbenhanced.rocks/" target="_blank" rel="noopener noreferrer">RBEnhanced</a>.</p>
+        <p>Esta versión no tiene varias funciones, como mejoras de canciones o opciones de personalizar.</p>
+        <p>*Compatible con SZBE69 (USA), SZBP69 (EU) o el prototipo de 1 del Sep, 2010.</p>
         <p>*RB3DX requiere una consola Wii <i>modificada</i> (Homebrew) para funcionar.</p>
         <p>*Puedes usar RB3DX en Wii, vWii, Wii Mini y emulador Dolphin.</p>
     </blockquote>
@@ -177,33 +210,9 @@ lang: es
     </blockquote>
 </div>
 
-<div id="YARG" class="tabcontent">
-    <h2>Mejoras de canciones para <a href="https://yarg.in/">YARG</a></h2>
-
-    <blockquote>
-        <p>Las mejoras de canciones de RB3DX requieren archivos CON de Rock Band <i>originales</i> para funcionar.</p>
-    </blockquote>
-
-    <h3>Descarga las <a href="/es/downloads/">Mejoras de canciones para YARG</a> de las "Descargas Adicionales" si todavía no lo has hecho</h3>
-
-    <ul>
-        <li>Extrae el archivo <code>.zip</code></li>
-        <li>Arrastra la carpeta <code>songs_updates</code> al lado de la misma carpeta que contiene los archivos <code>CON</code> de Rock Band</li>
-        <li><b>¡No coloques la carpeta de <code>songs_updates</code> adentro de la carpeta con las canciones!</b></li>
-        <li>En YARG, ve a <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
-    </ul>
-
-    <img src="/images/install/yarg_upd_es.webp" width="50%" alt="songs_updates">
-
-    <h3>✅ <i>¡Las mejoras de Rock Band 3 Deluxe ya están instaladas y listas para jugar!</i></h3>
-
-    <blockquote>
-        <p>¡A rockear!</p>
-    </blockquote>
-</div>
 
 <script>
-    function openCity(evt, cityName) {
+    function openPlat(evt, platName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -213,7 +222,7 @@ lang: es
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(platName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 </script>

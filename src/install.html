@@ -5,12 +5,11 @@ lang: en
 ---
 <h2 style="text-align: center;">How to Install</h2>
 
-<h3><i>Rock Band 3 Deluxe</i> requires a copy of vanilla <i>Rock Band 3</i> in order to run. We hope this is clear.</h3>
+<h3><i>Rock Band 3 Deluxe</i> requires a copy of vanilla <i>Rock Band 3</i> to install over. We hope this is clear.</h3>
 
 <ul>
-    <li><b>PS3:</b> BLUS30463 (USA)</li>
+    <li><b>PS3:</b> BLUS30463 (NTSC)</li>
     <li><b>360:</b> 45410914 (World)</li>
-    <li><b>Wii:</b> SZBE69 (USA) or SZBP69 (EU)</li>
 </ul>
 
 <br>
@@ -56,37 +55,11 @@ lang: en
 <h2>Select your platform of choice</h2>
 
 <div class="tab">
-    <button class="tablinks" onclick="window.open('https://rb3pc.milohax.org/gs_disc', '_blank')">RPCS3</button>
-    <button class="tablinks" onclick="openCity(event, 'PS3')">PS3</button>
-    <button class="tablinks" onclick="openCity(event, 'Xbox 360')">Xbox 360</button>
-    <button class="tablinks" onclick="openCity(event, 'Wii')">Wii/Dolphin</button>
-    <button class="tablinks" onclick="openCity(event, 'YARG')">YARG (Song Updates)</button>
-</div>
-
-<div id="PS3" class="tabcontent">
-    <h2>Installing on PS3*</h2>
-
-    <blockquote>
-        <p>*RB3DX requires a <i>modded</i> PS3 console (CFW or HEN) in order to run.</p>
-    </blockquote>
-
-    <h3>Download <a href="/downloads/">Rock Band 3 Deluxe</a> if you haven't already</h3>
-
-    <ul>
-        <li>Extract the <code>.zip</code> file.</li>
-        <li>Copy the <code>.pkg</code> file to the root of a <b>FAT32 formatted</b> USB drive.</li>
-        <li>Remove it from your PC and <b>plug it into the far right USB port on your PS3</b>.</li>
-        <li>On the XMB, navigate to <b>Package Manager &gt; Install Package Files &gt; Standard</b>.</li>
-        <li><b>Install it</b> just like any other package.</li>
-    </ul>
-
-    <img src="/images/install/ps3_dxpkg.webp" width="75%" alt="PS3 DX PKG">
-
-    <h3>✅ <i>Rock Band 3 Deluxe is now installed and ready to play!</i></h3>
-
-    <blockquote>
-        <p>You can play the game using the original disc or via a backup on your hard drive. Rock on!</p>
-    </blockquote>
+    <button class="tablinks" onclick="window.open('https://guides.milohax.org/en/rb3pc/intro/disclaimers/', '_blank')">RPCS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'Xbox 360')">Xbox 360</button>
+    <button class="tablinks" onclick="openPlat(event, 'PS3')">PS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'YARG')">YARG (Song Updates)</button>
+    <button class="tablinks" onclick="openPlat(event, 'Wii')">Wii/Dolphin (Devs only)</button>
 </div>
 
 <div id="Xbox 360" class="tabcontent">
@@ -141,15 +114,72 @@ lang: en
     <h3>✅ <i>You're ready to rock!</i></h3>
 </div>
 
-<div id="Wii" class="tabcontent">
-    <h2>Installing on Wii* (and <a href="https://dolphin-emu.org/">Dolphin Emulator</a>)</h2>
+<div id="PS3" class="tabcontent">
+    <h2>Installing on PS3*</h2>
 
     <blockquote>
+        <p>*RB3DX requires a <i>modded</i> PS3 console (CFW or HEN) on firmware 4.89 (or newer) in order to run.</p>
+    </blockquote>
+
+    <h3>Download <a href="/downloads/">Rock Band 3 Deluxe</a> if you haven't already</h3>
+
+    <ul>
+        <li>Extract the <code>.zip</code> file.</li>
+        <li>Copy the <code>.pkg</code> file to the root of a <b>FAT32 formatted</b> USB drive.</li>
+        <li>Remove it from your PC and <b>plug it into the far right USB port on your PS3</b>.</li>
+        <li>On the XMB, navigate to <b>Package Manager &gt; Install Package Files &gt; Standard</b>.</li>
+        <li><b>Install it</b> just like any other package.</li>
+    </ul>
+
+    <img src="/images/install/ps3_dxpkg.webp" width="75%" alt="PS3 DX PKG">
+
+    <h3>✅ <i>Rock Band 3 Deluxe is now installed and ready to play!</i></h3>
+
+    <blockquote>
+        <p>You can play the game using the original disc or via a backup on your hard drive. Rock on!</p>
+    </blockquote>
+</div>
+
+
+<div id="YARG" class="tabcontent">
+    <h2>Installing song updates for <a href="https://yarg.in/">YARG</a></h2>
+
+    <blockquote>
+        <p>RB3DX song updates require <i>original</i> Rock Band CON files to work.</p>
+        <p>Rock Band 3 Deluxe users do not need to install these as they are already included!</p>
+    </blockquote>
+
+    <h3>Download <a href="/downloads/">YARG Song Updates</a> from Misc. Goodies if you haven't already</h3>
+
+    <ul>
+        <li>Extract the <code>.zip</code> file.</li>
+        <li>Drag the <code>songs_updates</code> folder next to the folder that contains your Rock Band <code>CON</code> files.</li>
+        <li><b>Do not drag <code>songs_updates</code> into the folder with your Rock Band songs</b></li>
+        <li>In YARG, navigate to <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
+    </ul>
+
+    <img src="/images/install/yarg_upd.webp" width="50%" alt="songs_updates">
+
+    <h3>✅ <i>Rock Band 3 Deluxe Song Updates are now in your library!</i></h3>
+
+    <blockquote>
+        <p>Rock on!</p>
+    </blockquote>
+</div>
+
+<div id="Wii" class="tabcontent">
+    <h2>Installing on Wii* (and <a href="https://dolphin-emu.org/">Dolphin Emulator</a>)</h2>
+    <center><h3>⚠️ NOT RECOMMENDED! ⚠️</h3></center>
+    <blockquote>
+        <p><b>Formal Wii support has ceased. This version is strictly for development!</b></p>
+        <p>Wii users are suggested to only install <a href="https://rb3e.rbenhanced.rocks/" target="_blank" rel="noopener noreferrer">RBEnhanced</a>.</p>
+        <p>This version is missing many features, including upgrades and customization options.</p>
+        <p>*Compatible with SZBE69 (USA), SZBP69 (EU), or the Sep 1, 2010 prototype.</p>
         <p>*RB3DX requires a <i>modded</i> (Homebrewed) Wii console in order to run.</p>
         <p>*You can run RB3DX on Wii, vWii, Wii Mini, and Dolphin Emulator.</p>
     </blockquote>
 
-    <h3>Download <a href="/downloads/">Rock Band 3 Deluxe</a> if you haven't already</h3>
+    <h3>Download the <a href="/thankyou/" onclick="window.open('https://nightly.link/hmxmilohax/rock-band-3-deluxe/workflows/build/develop/RB3DX-Wii-Patcher.zip');">Rock Band 3 Deluxe Wii (Patcher)</a> if you haven't already</h3>
 
     <ul>
         <li>Extract the <code>.zip</code> file.</li>
@@ -176,32 +206,8 @@ lang: en
     </blockquote>
 </div>
 
-<div id="YARG" class="tabcontent">
-    <h2>Installing song updates for <a href="https://yarg.in/">YARG</a></h2>
-
-    <blockquote>
-        <p>RB3DX song updates require <i>original</i> Rock Band CON files to work.</p>
-    </blockquote>
-
-    <h3>Download <a href="/downloads/">YARG Song Updates</a> from Misc. Goodies if you haven't already</h3>
-
-    <ul>
-        <li>Extract the <code>.zip</code> file.</li>
-        <li>Drag the <code>songs_updates</code> folder next to the folder that contains your Rock Band <code>CON</code> files.</li>
-        <li><b>Do not drag <code>songs_updates</code> into the folder with your Rock Band songs</b></li>
-        <li>In YARG, navigate to <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
-    </ul>
-
-    <img src="/images/install/yarg_upd.webp" width="50%" alt="songs_updates">
-
-    <h3>✅ <i>Rock Band 3 Deluxe Song Updates are now ready to play!</i></h3>
-
-    <blockquote>
-        <p>Rock on!</p>
-    </blockquote>
-</div>
 <script>
-    function openCity(evt, cityName) {
+    function openPlat(evt, platName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -211,7 +217,7 @@ lang: en
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(platName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 </script>
