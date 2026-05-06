@@ -1,16 +1,15 @@
 ---
-title: Cómo Instalar
+title: Cómo instalar
 layout: main.html
 lang: es
 ---
-<h2 style="text-align: center;">Cómo Instalar</h2>
+<h2 style="text-align: center;">Cómo instalar</h2>
 
-<h3><i>Rock Band 3 Deluxe</i> requiere una copia de <i>Rock Band 3</i> limpia y sin modificaciones antes de instalar. Esperemos que esto esté claro.</h3>
+<h3><i>Rock Band 3 Deluxe</i> requiere una copia de <i>Rock Band 3</i> limpia y sin modificaciones antes de instalar. Esperemos que esto sea claro.</h3>
 
 <ul>
     <li><b>PS3:</b> BLUS30463 (NTSC)</li>
     <li><b>360:</b> 45410914 (RF)</li>
-    <li><b>Wii:</b> SZBE69 (NTSC) o SZBP69 (PAL)</li>
 </ul>
 
 <br>
@@ -56,18 +55,70 @@ lang: es
 <h2>Seleccionar tu plataforma preferida</h2>
 
 <div class="tab">
-    <button class="tablinks" onclick="window.open('https://rb3pc.milohax.org/gs_disc_es', '_blank')">RPCS3</button>
-    <button class="tablinks" onclick="openCity(event, 'PS3')">PS3</button>
-    <button class="tablinks" onclick="openCity(event, 'Xbox 360')">Xbox 360</button>
-    <button class="tablinks" onclick="openCity(event, 'Wii')">Wii/Dolphin</button>
-    <button class="tablinks" onclick="openCity(event, 'YARG')">YARG (Song Updates)</button>
+    <button class="tablinks" onclick="window.open('https://guides.milohax.org/es/rb3pc/intro/disclaimers/', '_blank')">RPCS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'Xbox 360')">Xbox 360</button>
+    <button class="tablinks" onclick="openPlat(event, 'PS3')">PS3</button>
+    <button class="tablinks" onclick="openPlat(event, 'YARG')">YARG (Song Updates)</button>
+    <button class="tablinks" onclick="openPlat(event, 'Wii')">Wii/Dolphin (Desarrollo)</button>
+</div>
+
+<div id="Xbox 360" class="tabcontent">
+    <h2>Instalando en Xbox 360*</h2>
+
+    <blockquote>
+        <p>*RB3DX requiere una consola de Xbox 360 <i>modificada/chipeada</i> (RGH/JTAG) o con BadAvatar para funcionar. <b>Sin esto, ¡no puedes instalar este mod!</b></p>
+        <li>¡La versión de "Games on Demand" (GoD) <i>Rock Band 3</i> NO es compatible! El juego necesita estar en formato carpeta; deberías ver un archivo que se llama <code>default.xex</code></li>
+        <img src="/images/install/360_no_god.webp" width="50%" alt="360 NO GOD">
+        <li>No uses ISO2GOD después de instalar el mod, porque no podrás guardar tus ajustes o buscar.</li>
+    </blockquote>
+
+    <p><b>Instala tu copia de Rock Band 3</b> al disco duro de la consola. <i>Esto es requerido.</i></p>
+
+    <ul>
+        <li>Recomendamos que <b>cambies el nombre de <code>default.xex</code> a <code>default_vanilla.xex</code></b>, para tener una copia de seguridad, por si acaso.</li>
+    </ul>
+
+    <img src="/images/install/360_aurora_install.webp" width="100%" alt="360 Aurora Install">
+    
+    <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
+
+    <ul>
+        <li>Extrae el archivo de <code>RB3DX-Xbox.zip</code> y copia los archivos a una memoria USB. Cuando termine de transferir, conecta la memoria USB a tu consola.</li>
+        <li>En el gestor de archivos de Aurora, encuentra donde colocaste los archivos y elige <code>default.xex</code> y <code>gen</code> y elige "Copiar".</li>
+        <li>Encuentra donde tienes tu copia de Rock Band 3 instalada y elige "Pegar" y confirma cualquier archivo que quiera reemplazar.</li>
+    </ul>
+
+    <p><i>Antes de iniciar el juego por primera vez, recomendamos que...</i></p>
+
+    <ul>
+        <li><b>Descargues la carátula de Rock Band 3 Deluxe</b> en Aurora.</li>
+        <ul>
+            <li>Posiciona el selector en Rock Band 3 en el menú de Aurora y <b>pulsa el botón <code>"Y"</code></b>.</li>
+            <li>Ve hacia abajo hasta que llegues a la opción de <b><code>descargar carátulas</code></b>.</li>
+            <li><b>Descarga la que fue subida por <code>jnack</code></b>, debe ser la última opción.</li>
+            <li>También puedes <b>renombrar el juego a Rock Band 3 Deluxe</b> si quieres.</li>
+        </ul>
+        <li><b>Renombres el juego a <i>Rock Band 3 Deluxe</i></b>.</li>
+        <ul>
+            <li>En el mismo menú, ve hacia abajo y elige "Renombrar"</li>
+            <li>Escribe "Rock Band 3 Deluxe"</li>
+        </ul>
+        <li><b>Instales <i><a href="https://rb3e.rbenhanced.rocks/">RB3Enhanced</a></i></b>.</li>
+        <ul>
+            <li>Esto es otro mod para Rock Band 3 que agrega más funciones y se puede usar en combinación con RB3DX.</li>
+            <li>Por favor <a href="https://rb3e.rbenhanced.rocks/">visita su sitio</a> para mas información.</li>
+        </ul>
+    </ul>
+
+    <h3>✅ <i>¡Estas listo para rockear!</i></h3>
 </div>
 
 <div id="PS3" class="tabcontent">
     <h2>Instalando en PS3*</h2>
 
     <blockquote>
-        <p>*RB3DX requiere una consola de PS3 <i>modificada</i> (CFW o HEN) para funcionar.</p>
+        <p>*RB3DX requiere una consola de PS3 <i>modificada</i> (CFW o HEN) con firmware de versión 4.89 (o más nueva) para funcionar.</p>
+        <p>⚠️ ¡Rebug no funciona! ⚠️</p>
     </blockquote>
 
     <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
@@ -89,63 +140,39 @@ lang: es
     </blockquote>
 </div>
 
-<div id="Xbox 360" class="tabcontent">
-    <h2>Instalando en Xbox 360*</h2>
+<div id="YARG" class="tabcontent">
+    <h2>Mejoras de canciones para <a href="https://yarg.in/">YARG</a></h2>
 
     <blockquote>
-        <p>*RB3DX requiere una consola de Xbox 360 <i>modificada/chipeada</i> (RGH/JTAG) para funcionar.</p>
+        <p>Las mejoras de canciones de RB3DX requieren archivos CON de Rock Band <i>originales</i> para funcionar.</p>
     </blockquote>
 
-    <p><b>Instala tu copia de Rock Band 3</b> al disco duro de la consola. <i>Esto es requerido.</i></p>
-
-    <ul>
-        <li>Recomendamos que <b>cambies el nombre de <code>default.xex</code> a <code>default_vanilla.xex</code></b>, para tener una copia de seguridad, por si acaso quieres regresar a jugar sin modificaciones (por cualquier razón)</li>
-    </ul>
-
-    <h3>Descarga <a href="/es/downloads/">Rock Band 3 Deluxe</a> si todavía no lo has hecho</h3>
+    <h3>Descarga las <a href="/es/downloads/">Mejoras de canciones para YARG</a> de las "Descargas Adicionales" si todavía no lo has hecho</h3>
 
     <ul>
         <li>Extrae el archivo <code>.zip</code></li>
-        <li><b>Copia los archivos incluidos a donde tienes Rock Band 3 instalado</b>.</li>
-        <ul>
-            <li>Puedes copiar por FTP o con una memoria USB por el administrador de archivos de Aurora</li>
-        </ul>
-        <li>Confirma <code>Yes</code> para reemplazar los archivos que te pregunte.</li>
+        <li>Arrastra la carpeta <code>songs_updates</code> al lado de la misma carpeta que contiene los archivos <code>CON</code> de Rock Band</li>
+        <li><b>¡No coloques la carpeta de <code>songs_updates</code> adentro de la carpeta con las canciones!</b></li>
+        <li>En YARG, ve a <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
     </ul>
 
-    <p><i>Antes de iniciar el juego, recomendamos que tu...</i></p>
+    <img src="/images/install/yarg_upd_es.webp" width="50%" alt="songs_updates">
 
-    <ul>
-        <li><b>Desactives cualquier actualización de titulo</b> que puedas tener para Rock Band 3.</li>
-        <ul>
-            <li><i>Rock Band 3 Deluxe <b>tiene la actualización más reciente incluida</b>.</i></li>
-            <li>Si nunca has jugado a Rock Band 3 en tu consola, no necesitas hacer esto.</li>
-        </ul>
-        <li><b>Borra el caché de sistema</b>.</li>
-        <ul>
-            <li>En el menú principal de Xbox, ve a <b>Sistema &gt; Almacenamiento</b> y <b>pulsa el botón <code>"Y"</code> para borrar el caché del sistema</b>.</li>
-            <li>Si nunca has jugado a Rock Band 3 en tu consola, no necesitas hacer esto.</li>
-        </ul>
-        <li><b>Descargues la carátula de Rock Band 3 Deluxe</b> en Aurora.</li>
-        <ul>
-            <li>Posiciona el selector en Rock Band 3 en el menú de Aurora y <b>pulsa el botón <code>"Y"</code></b>.</li>
-            <li>Ve hacia abajo hasta que llegues a la opción de <b><code>descargar carátulas</code></b>.</li>
-            <li><b>Descarga la que fue subida por <code>jnack</code></b>, debe ser la última opción.</li>
-            <li>También puedes <b>renombrar el juego a Rock Band 3 Deluxe</b> si quieres.</li>
-        </ul>
-    </ul>
-
-    <h3>✅ <i>¡Rock Band 3 Deluxe está instalado y listo para jugar!</i></h3>
+    <h3>✅ <i>¡Las mejoras de Rock Band 3 Deluxe ya están instaladas y listas para jugar!</i></h3>
 
     <blockquote>
-        <p>¡También puedes instalar <a href="https://rb3e.rbenhanced.rocks/">RB3Enhanced</a>! Funciona al lado de <i>Deluxe</i> y puedes usar sus mejoras al mismo tiempo. ¡A rockear!</p>
+        <p>¡A rockear!</p>
     </blockquote>
 </div>
 
 <div id="Wii" class="tabcontent">
     <h2>Instalando en Wii* (y emulador <a href="https://dolphin-emu.org/">Dolphin</a>)</h2>
-
+    <center><h3>⚠️ ¡NO RECOMENDADO! ⚠️</h3></center>
     <blockquote>
+        <p><b>Soporte para Wii se acabo. ¡Esta versión es solo para desarrolladores!</b></p>
+        <p>Se recomienda que los usuarios de Wii solo instalen <a href="https://rb3e.rbenhanced.rocks/" target="_blank" rel="noopener noreferrer">RBEnhanced</a>.</p>
+        <p>Le faltan varias funciones a esta versión, como mejoras de canciones o opciones de personalizar.</p>
+        <p>*Compatible con SZBE69 (USA), SZBP69 (EU) o el prototipo de 1 del Sep, 2010.</p>
         <p>*RB3DX requiere una consola Wii <i>modificada</i> (Homebrew) para funcionar.</p>
         <p>*Puedes usar RB3DX en Wii, vWii, Wii Mini y emulador Dolphin.</p>
     </blockquote>
@@ -177,33 +204,9 @@ lang: es
     </blockquote>
 </div>
 
-<div id="YARG" class="tabcontent">
-    <h2>Mejoras de canciones para <a href="https://yarg.in/">YARG</a></h2>
-
-    <blockquote>
-        <p>Las mejoras de canciones de RB3DX requieren archivos CON de Rock Band <i>originales</i> para funcionar.</p>
-    </blockquote>
-
-    <h3>Descarga las <a href="/es/downloads/">Mejoras de canciones para YARG</a> de las "Descargas Adicionales" si todavía no lo has hecho</h3>
-
-    <ul>
-        <li>Extrae el archivo <code>.zip</code></li>
-        <li>Arrastra la carpeta <code>songs_updates</code> al lado de la misma carpeta que contiene los archivos <code>CON</code> de Rock Band</li>
-        <li><b>¡No coloques la carpeta de <code>songs_updates</code> adentro de la carpeta con las canciones!</b></li>
-        <li>En YARG, ve a <b>Settings &gt; Songs &gt; Scan Songs</b>.</li>
-    </ul>
-
-    <img src="/images/install/yarg_upd_es.webp" width="50%" alt="songs_updates">
-
-    <h3>✅ <i>¡Las mejoras de Rock Band 3 Deluxe ya están instaladas y listas para jugar!</i></h3>
-
-    <blockquote>
-        <p>¡A rockear!</p>
-    </blockquote>
-</div>
 
 <script>
-    function openCity(evt, cityName) {
+    function openPlat(evt, platName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -213,7 +216,7 @@ lang: es
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(platName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 </script>
