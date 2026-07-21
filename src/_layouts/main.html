@@ -46,11 +46,14 @@ title: Rock Band 3 Deluxe
 				<div class="language-selector-content">
                     {%- if page.fileSlug == "es" -%}
                         {%- assign slug = "" -%}
+                    {%- elsif page.fileSlug == "pt" -%}
+                        {%- assign slug = "" -%}
                     {%- else -%}
                         {%- assign slug = page.fileSlug -%}
                     {%- endif %}
                     <a href="/{{slug}}">English</a>
                     <a href="/es/{{slug}}">Español</a>
+                    <a href="/pt/{{slug}}">Português</a>
 				</div>
 			</div>
 			<a href="https://github.com/hmxmilohax/rock-band-3-deluxe">
@@ -75,6 +78,14 @@ title: Rock Band 3 Deluxe
                     <a href="/es/about/">Acerca de</a> | 
                     <a href="/es/decomp/">Decompilación</a>
                     <!-- we currently only accept bug reports in english -->
+                {% when "pt" %}
+                    <a href="/pt/">Home</a> | 
+                    <a href="/pt/features/">Adições</a> | 
+                    <a href="/pt/downloads/">Downloads</a> | 
+                    <a href="/pt/install/">Como Instalar</a> |
+                    <a href="/pt/about/">Sobre Nós</a> | 
+                    <a href="/pt/decomp/">Decompilação</a>
+                    <!-- we currently only accept bug reports in english -->
                 {% else %}
                     <a href="/">Home</a> | 
                     <a href="/features/">Features</a> | 
@@ -90,10 +101,12 @@ title: Rock Band 3 Deluxe
         {{content}}
 	</main>
 	<footer>
-		<a href="https://discord.gg/milohax"><img src="/images/milohax.webp" alt="MiloHax"></a>
+		<a href="https://milohax.org/"><img src="/images/milohax.webp" alt="MiloHax"></a>
         {% case lang %}
             {% when "es" %}
                 <p><i>Rock Band 3</i> &copy; 2010 Harmonix Music Systems. <i>Rock Band 3 Deluxe</i> es un proyecto hecho por fans que no está asociado con Harmonix, MTV Games, Mad Catz, o EA.</p>
+            {% when "pt" %}
+                <p><i>Rock Band 3</i> &copy; 2010 Harmonix Music Systems. <i>Rock Band 3 Deluxe</i> é um projeto fan-made e não possui afiliação com Harmonix, MTV Games, Mad Catz, ou com a EA.</p>
             {% else %}
                 <p><i>Rock Band 3</i> &copy; 2010 Harmonix Music Systems. <i>Rock Band 3 Deluxe</i> is a fan project and is not affiliated with Harmonix, MTV Games, Mad Catz, or EA.</p>
         {% endcase %}
