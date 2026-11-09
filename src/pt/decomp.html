@@ -3,4 +3,112 @@ title: Decompilação
 layout: main.html
 lang: pt
 ---
-<h2 style="text-align: center">🚧    🚧<br>Esta página está em construção!<br>🚧   🚧</h2>
+<h2 style="text-align: center">Descompilação do Rock Band 3</h2>
+
+<h1>O que é isso?</h1>
+
+<p>
+    É um projeto de engenharia reversa com o objetivo de produzir uma descompilação <b>funcionalmente equivalente</b> da versão de Wii do <i>Rock Band 3</i>. Esse processo envolve escrever código em C++ que produz um código similar a versão final do jogo.
+</p>
+
+<p>
+    A versão final disso tudo será uma versão totalmente editável do código do jogo em C++ legível por humanos. Isso irá permitir modificações além do que já podem ser feitos no <i>Rock Band 3 Deluxe</i>.
+</p>
+
+<h1>Por que a versão de Wii?</h1>
+<p>
+    É bem simplesmente, essa é a única versão do jogo que é viável produzir uma descompilação precisa. Outras versões passariam por um processo chamado <a href=https://en.wikipedia.org/wiki/Interprocedural_optimization>Link-Time Optimization</a> que faz o código mais rápido, porém para nós isso é uma enorme desvantagem, tornando completamente inviável um projeto de descompilação preciso.
+</p>
+
+<h1>Como posso contribuir?</h1>
+<p>
+    Você pode contribuir <a href="https://github.com/darkrta/rb3">aqui</a>. Nós sempre iremos procurar por mais contribuidores para seguir em frente com o projeto.
+</p>
+
+<h1>E sobre port?</h1>
+<p>
+    Para começar, ressaltamos que projetos de descompilação <i>NÃO</i> tem como objetivo ports. Dito isso, este é um caso muito raro em que as pessoas que trabalham nesse projeto de descompilação também estão interessadas em portar a base do código para mais plataformas.
+</p>
+<p>
+    Mantenha em mente que esse processo é extremamente demorado, e nós não iremos fazer nenhuma tentativa de port até o jogo ser completamente descompilado. Se você realmente quer fazer o port ser feito mais rápido e você tem conhecimento técnico (ou tem interesse em aprender), você devia considerar ajudar no projeto.
+</p>
+
+<h1>Vocês serão ser capazes de [modificar] com isso?</h1>
+<p>
+    Teoricamente sim, mas tamanha modificações estão totalmente fora do escopo desse projeto. Esse projeto se preocupa apenas em produzir um código C++ legível que pode ser usada para criar tais modificações.
+</p>
+
+<h1 style="text-align: center">Progresso</h1>
+
+<div id="chartContainer" style="display: flex; justify-content: center"></div>
+
+<link href="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/uplot@1.6.26/dist/uPlot.iife.min.js"></script>
+<script>
+    const height = 400;
+    const stroke = '#a9a9b3';
+    const grid = {
+        stroke: 'rgba(128, 128, 128, 0.1)',
+    };
+
+    function percentValue(self, rawValue) {
+        if (rawValue == null) {
+            return null;
+        }
+        return rawValue.toFixed(2) + "%";
+    }
+
+    const opts = {
+        id: "chart",
+        //title: "Progress",
+        width: 700,
+        height: height,
+        scales: {
+            x: {
+                time: true,
+            },
+        },
+        series: [
+            {},
+            {
+                label: "Code",
+                width: 2,
+                stroke: "rgb(240, 141, 70)",
+                value: percentValue,
+            },
+            {
+                label: "Data",
+                width: 2,
+                stroke: "#5c9bfe",
+                value: percentValue,
+            }
+        ],
+        axes: [
+            {
+                stroke,
+                grid,
+            },
+            {
+                stroke,
+                grid,
+                values: (self, ticks) => ticks.map(rawValue => rawValue.toFixed(0) + "%"),
+            },
+        ],
+    };
+
+    const u = new uPlot(opts, null, document.getElementById('chartContainer'));
+
+    fetch('https://progress.decomp.club/data/rb3/SZBE69_B8/dol/?mode=all')
+        .then(v => v.json())
+        .then(result => {
+            const entries = result['rb3']['SZBE69_B8']['dol'].reverse();
+            u.setData([
+                entries.map(a => a.timestamp),
+                entries.map(a => 100 * (a.measures['code'] / a.measures['code/total'])),
+                entries.map(a => 100 * (a.measures['data'] / a.measures['data/total'])),
+            ]);
+        });
+</script>
+<p style="text-align: center;">
+    Para uma visualização mais detalhada do progresso da descompilação, visite <a href="https://decomp.dev/DarkRTA/rb3">esse site</a>.
+</p>
