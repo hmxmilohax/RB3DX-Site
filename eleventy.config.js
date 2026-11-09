@@ -12,4 +12,5 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/**/*.woff")
     eleventyConfig.addPassthroughCopy("src/**/*.woff2")
     eleventyConfig.setLayoutsDirectory("_layouts")
+    //eleventyConfig.setBrowserSyncConfig({host: "0.0.0.0"})
 };
